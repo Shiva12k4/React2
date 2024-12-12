@@ -6,20 +6,36 @@ import './App.css'
 
 function App() {
   const [counter,setcounter]=useState(0)
+  const [msg,setmsg]=useState(false);
+  
+
 
   const addValue = ()=>{
-    console.log('clicked',counter);
-    setcounter(counter+1)
+    if (counter < 20) {
     
+    
+    console.log('clicked',counter);
+    setcounter(counter+1);
+    setmsg(false);
+    }
+    else{
+      setmsg(true)
+    }
   }
   const removeValue=()=>{
+    if(counter >0){
     setcounter(counter-1);
+    setmsg(false);
+  }else{
+    setmsg(true)
+  }
   }
 
   return (
     <>
-     <h1>chai aur react</h1>
+     <h1>react</h1>
      <h2>counter value:{counter}</h2>
+     {msg && <h2>no. can't be less than 0 or greater than 20</h2>}
      <button onClick={addValue}>Add value</button>
      <button onClick={removeValue}>remove value</button>
     </>
