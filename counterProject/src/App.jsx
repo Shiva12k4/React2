@@ -15,7 +15,11 @@ function App() {
     
     
     console.log('clicked',counter);
+    setcounter(counter+1);//this does not work for multiple instance, only for single time update it works
     setcounter(counter+1);
+    setcounter(counter+1);
+    setcounter((prev)=>prev+1)//this will work for multiple time update in single cycle
+    setcounter((prev)=>prev+1)
     setmsg(false);
     }
     else{
