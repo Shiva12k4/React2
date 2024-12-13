@@ -6,7 +6,7 @@ function App() {
     <>
       <h1 className='bg-green-400 text-black-200 p-10 rounded-fll mb-10' >hii shivam </h1>
 <Card first_one="american" content="hi i am julia"/>
-<Card first_one="russian"/>
+<Card first_one="russian "/>
     </>
   )
 }
