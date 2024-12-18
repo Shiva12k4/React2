@@ -82,4 +82,4 @@ export default App
 
 
 //useref---give reference of any element and manupulate it 
-//line 10 and line 44 are link together
+//line 10 and line 44 are link togethers
